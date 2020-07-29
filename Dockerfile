@@ -5,5 +5,7 @@ RUN conda install --yes \
     python=3.7 \
     && conda clean -afy
 
+COPY py/* /bin/
+
 ENTRYPOINT ["hello.py"]
 
