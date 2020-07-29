@@ -7,5 +7,5 @@ RUN conda install --yes \
 
 COPY py/* /bin/
 
-ENTRYPOINT ["hello.py"]
+ENTRYPOINT ["/bin/hello.py"]
 
